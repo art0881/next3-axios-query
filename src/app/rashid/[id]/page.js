@@ -4,7 +4,8 @@ import React from 'react'
 
 export  async function getRashidId(id) {
     const res = await fetch('https://jsonplaceholder.typicode.com/users/'+id);
-    return res.json();
+    const data = res.json();
+    return data;
 }
 
 const RashidId = async ({params}) => {

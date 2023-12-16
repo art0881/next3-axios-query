@@ -9,8 +9,8 @@ export const metadata = {
 }
 export  async function getRashid() {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
-    return res.json();
-    
+    const data = res.json();
+    return data;
 }
 
 const Rashid = async () => {
