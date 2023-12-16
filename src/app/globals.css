@@ -6,7 +6,12 @@ body {
   color: var(--color-text);
   background: #000;
 }
-
+.active{
+  color: red;
+}
+.pathname{
+  color: red;
+}
 .main{
 width: 650px;
 margin: auto;
