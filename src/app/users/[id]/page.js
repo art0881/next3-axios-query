@@ -2,18 +2,18 @@
 import Link from 'next/link';
 import React from 'react'
 
-export  async function getRashidId(id) {
+export  async function getUsersId(id) {
     const res = await fetch('https://jsonplaceholder.typicode.com/users/'+id);
     const data = res.json();
     return data;
 }
 
-const RashidId = async ({params}) => {
-  const data = await getRashidId(params.id);
+const UsersId = async ({params}) => {
+  const data = await getUsersId(params.id);
 
   return (
     <div style={{width: '100%' }} className='block-text'>
-       <Link href='/rashid'>Назад</Link>
+       <Link href='/users'>Назад</Link>
     
         <div  key={data.id}>
           <h3>{data.name}</h3>
@@ -26,4 +26,4 @@ const RashidId = async ({params}) => {
   )
 }
 
-export default RashidId
+export default UsersId

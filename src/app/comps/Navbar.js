@@ -12,7 +12,9 @@ const Navbar = () => {
         <div><Image width={50} height={50}src='/red_logo.png'/></div>
         <div><Link className={` ${pathname === '/' ? 'active' : ''}`} href='/' >Home</Link>
         <Link className={` ${pathname === '/about' ? 'active' : ''}`} href='/about'>About</Link>
-        <Link className={` ${pathname === '/rashid' ? 'active' : ''}`} href='/rashid'>Rashid</Link>
+        <Link className={` ${pathname === '/users' ? 'active' : ''}`} href='/users'>Users</Link>
+        <Link className={` ${pathname === '/posts' ? 'active' : ''}`} href='/posts'>Posts</Link>
+        <Link className={` ${pathname === '/comments' ? 'active' : ''}`} href='/comments'>Comments</Link>
         </div></div>
     </header>
   )
